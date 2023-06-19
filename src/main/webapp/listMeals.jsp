@@ -10,11 +10,11 @@
 <hr>
 <h2>Meals</h2>
 
-<a href="">Add Meal</a>
+<a href="meals?action=insert">Add Meal</a>
 <br>
 <br>
 
-<table border="1" cellpadding="8" cellspacing="0">
+<table border="1" cellpadding="8" cellspacing="0" bordercolor = "black">
     <tr>
         <th>Date</th>
         <th>Description</th>
@@ -26,11 +26,11 @@
     <c:forEach var="meal" items="${listMeals}">
         <jsp:useBean id="meal" type="ru.javawebinar.topjava.model.MealTo"/>
        <tr style="color: ${meal.excess? 'green': 'red'}">
-           <td>${meal.dateTime.format( DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm"))}</td>
+           <td>${meal.dateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm"))}</td>
             <td>${meal.description}</td>
             <td>${meal.calories}</td>
-            <td><a href="">Update</a></td>
-            <td><a href="">Delete</a></td>
+           <td><a href="meals?action=edit&mealId=<c:out value="${meal.mealId}"/>">Update</a></td>
+           <td><a href="meals?action=delete&mealId=<c:out value="${meal.mealId}"/>">Delete</a></td>
         </tr>
     </c:forEach>
 
