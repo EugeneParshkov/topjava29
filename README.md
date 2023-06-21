@@ -16,6 +16,7 @@ Java Enterprise Online Project
 ### [Изменения проекта (Release Notes)](ReleaseNotes.md)
 ### <a href='https://github.com/JavaOPs/topjava/wiki/Стажировка-"Enterprise-Java-разработчик-(TopJava)"'>Требования к участникам, Wiki</a>
 ### <a href="cv.md">Составление резюме, подготовка к интервью, поиск работы</a>
+- [Демо разрабатываемого приложения](http://javaops-demo.ru/topjava)
 
 Обновленное вводное занятие (обязательно смотреть все видео)
 ===============
